@@ -1,0 +1,6 @@
+1;Tratador;Daniel Oscar;123.456.789-10;30;O;+;Mamiferos;
+2;Veterinario;Sarah Manuela;222.666.919-40;27;B;-;Aves;
+3;Veterinario;Caio Castro;883.247.924-11;31;A;+;Repteis;
+4;Tratador;Rafael Gomes;398.296.620-14;35;A;+;Anfibios;
+
+
