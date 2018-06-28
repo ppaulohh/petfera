@@ -23,10 +23,10 @@ int main() {
 
 
 
-	funcionarios.open("funcionarios");
-	tipo_de_funcionarios.open("funcionarios");
-	tipo_de_classe.open("petfera");
-	petfera.open("petfera");
+	funcionarios.open("data/funcionarios.txt");
+	tipo_de_funcionarios.open("data/funcionarios.txt");
+	tipo_de_classe.open("data/animais.txt");
+	petfera.open("data/animais.txt");
 
 	
 
