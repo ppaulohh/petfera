@@ -8,7 +8,9 @@
 #include <iostream>
 #include <exception>
 #include <stdexcept>
+#include <cctype>
 #include "validadores.h"
+
 
 using namespace std;
 
@@ -35,6 +37,6 @@ void ConsultaFuncionario(map<int, Funcionario*> &funcinarios);
 void AlteraAnimal(map<int, Animal*> &animals);
 
 
-
+void ChecarEntrada(string opcao);
 
 #endif

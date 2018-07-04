@@ -162,6 +162,13 @@ void ConsultaFuncionario(map<int, Funcionario*> &funcinarios) {
 	} 
 }
 
+void ChecarEntrada(string opcao){
+
+		if (!std::isdigit(opcao[0])){
+			throw EntradaInvalida();
+	}
+} 
+
 
 
 
