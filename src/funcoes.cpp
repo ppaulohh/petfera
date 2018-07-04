@@ -1,4 +1,4 @@
-#include "funcoes.h"
+#include "funcoes.hpp"
 
 void CadastroAnimal(map<int, Animal *> &animals, string classe, ifstream &is, int posicao, int chave)
 {

@@ -1,6 +1,5 @@
-#include "animal.h"
-#ifndef FUNCOES_H
-#define FUNCOES_H
+#ifndef FUNCOES_HPP
+#define FUNCOES_HPP
 
 #include <fstream>
 #include <string>
@@ -9,7 +8,9 @@
 #include <exception>
 #include <stdexcept>
 #include <cctype>
-#include "validadores.h"
+
+#include "animal.hpp"
+#include "validadores.hpp"
 
 using namespace std;
 

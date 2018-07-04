@@ -1,8 +1,8 @@
-#ifndef ANIMAL_H
-#define ANIMAL_h
+#ifndef ANIMAL_HPP
+#define ANIMAL_HPP
 
-#include "funcionario.h"
-#include "animalsilvestre.h"
+#include "funcionario.hpp"
+#include "animalsilvestre.hpp"
 #include <iostream>
 #include <sstream>
 

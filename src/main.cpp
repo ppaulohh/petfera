@@ -3,7 +3,8 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include "funcoes.h"
+
+#include "funcoes.hpp"
 
 using namespace std;
 

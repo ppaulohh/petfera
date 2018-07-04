@@ -1,5 +1,5 @@
-#ifndef ANIMALSILVESTRE_H
-#define ANIMALSILVESTRE_h
+#ifndef ANIMALSILVESTRE_HPP
+#define ANIMALSILVESTRE_HPP
 
 #include <iostream>
 #include <string>

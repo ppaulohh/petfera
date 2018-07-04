@@ -1,4 +1,4 @@
-#include "animal.h"
+#include "animal.hpp"
 
 /** contrutor padrão */
 Animal::Animal()
@@ -189,8 +189,8 @@ istream &operator>>(istream &is, Animal &animals)
 
 /**
  * @details Sobrecarga do operador de impressão (<<)
- * @param   os Output stream
- * @param   a  Objeto da classe "Animal"
+ * @param os Output stream
+ * @param a Objeto da classe "Animal"
  */
 
 ostream &operator<<(ostream &os, Animal &animals)
@@ -211,9 +211,9 @@ ostream &operator<<(ostream &os, Animal &animals)
 
 /**
  * @brief Implementação dos métodos definidos na classe Anfibio.
- * @author  sara souza
- * @since 01/11/2016
- * @date  02/11/2016
+ * @author Paulo Henrique
+ * @since 28/06/2018
+ * @date  28/06/2018
  */
 
 Anfibio::Anfibio()
@@ -248,9 +248,9 @@ void Anfibio::setUltimaMuda(string um)
 
 /**
  * @brief Implementação dos métodos definidos na classe Mamifero.
- * @author  sara souza
- * @since 01/11/2016
- * @date  02/11/2016
+ * @author Paulo Henrique
+ * @since 28/06/2018
+ * @date  28/06/2018
  */
 
 Mamifero::Mamifero()
@@ -274,9 +274,9 @@ void Mamifero::setCorPelo(string cp)
 
 /**
  * @brief Implementação dos métodos definidos na classe Reptil.
- * @author  sara souza
- * @since 01/11/2016
- * @date  02/11/2016
+ * @author Paulo Henrique
+ * @since 28/06/2018
+ * @date  28/06/2018
  */
 
 Reptil::Reptil()
@@ -311,9 +311,9 @@ void Reptil::setTipoVeneno(string tv)
 
 /**
  * @brief Implementação dos métodos definidos na classe Ave.
- * @author  sara souza
- * @since 01/11/2016
- * @date  02/11/2016
+ * @author Paulo Henrique
+ * @since 28/06/2018
+ * @date  28/06/2018
  */
 
 Ave::Ave()
