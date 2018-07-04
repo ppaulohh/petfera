@@ -8,9 +8,8 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char const *argv[])
 {
-
 	map<int, Animal *> animals;
 	map<int, Funcionario *> funcinarios;
 
@@ -27,13 +26,12 @@ int main()
 	if (!funcionarios || !petfera)
 	{
 		cerr << "O arquivo não foi encontrado!" << endl;
+		cerr << "O programa será encerrado." << endl;
 		exit(1);
-		cerr << "Programa encerrado." << endl;
 	}
 
 	else
 	{
-
 		cout << "\n***************************\n";
 		cout << "\n BEM VINDO AO PET FERA 2018 \n";
 		cout << "\n***************************\n";
@@ -60,9 +58,7 @@ int main()
 				//Funcionários
 				switch (escolha)
 				{
-
 				case 1:
-
 					for (int j = 0; j < 4; j++)
 					{
 						string linha, escolha_funcionario;
@@ -94,7 +90,6 @@ int main()
 					tipo_de_classe.close();
 					petfera.close();
 					funcionarios.close();
-
 					cout << "Os dados foram Cadastrados" << endl;
 					break;
 
