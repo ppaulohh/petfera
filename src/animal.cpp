@@ -1,7 +1,8 @@
 #include "animal.h"
 
 /** contrutor padrão */
-Animal::Animal() {
+Animal::Animal()
+{
 	id = 0;
 	classe = "";
 	nome = "";
@@ -15,150 +16,175 @@ Animal::Animal() {
 }
 
 /** contrutor parametizado */
-Animal::Animal(int a,string b,string c,string d,char e,float f,string g,Veterinario* v, Tratador* t,string h) {
-	
-	 setId(a);
-     setNome(b);
-     setCientifico(c);
-     setClasse(d);
-     setSexo(e);
-     setTamanho(f);
-     setDieta(g);
-     setVeterinario(v);
-     setTratador(t);
-     setBatismo(h);
+Animal::Animal(int a, string b, string c, string d, char e, float f, string g, Veterinario *v, Tratador *t, string h)
+{
+
+	setId(a);
+	setNome(b);
+	setCientifico(c);
+	setClasse(d);
+	setSexo(e);
+	setTamanho(f);
+	setDieta(g);
+	setVeterinario(v);
+	setTratador(t);
+	setBatismo(h);
 }
 
- /** @brief Destrutor padrao */
-Animal::~Animal() {
-
+/** @brief Destrutor padrao */
+Animal::~Animal()
+{
 }
 
-int Animal::getId() {
+int Animal::getId()
+{
 	return id;
 }
 
-void Animal::setId(int a) {
+void Animal::setId(int a)
+{
 	id = a;
 }
 
-string Animal::getClasse() {
+string Animal::getClasse()
+{
 	return classe;
 }
 
-void Animal::setClasse(string c) {
+void Animal::setClasse(string c)
+{
 	classe = c;
 }
 
-string Animal::getNome() {
+string Animal::getNome()
+{
 	return nome;
 }
 
-void Animal::setNome(string n) {
+void Animal::setNome(string n)
+{
 	nome = n;
 }
 
-string Animal::getCientifico() {
+string Animal::getCientifico()
+{
 	return cientifico;
 }
 
-void Animal::setCientifico(string c) {
+void Animal::setCientifico(string c)
+{
 	cientifico = c;
 }
 
-char Animal::getSexo() {
+char Animal::getSexo()
+{
 	return sexo;
 }
 
-void Animal::setSexo(char s) {
+void Animal::setSexo(char s)
+{
 	sexo = s;
 }
 
-float Animal::getTamanho() {
+float Animal::getTamanho()
+{
 	return tamanho;
 }
-		
-void Animal::setTamanho(float t) {
+
+void Animal::setTamanho(float t)
+{
 	tamanho = t;
 }
 
-string Animal::getDieta() {
+string Animal::getDieta()
+{
 	return dieta;
 }
 
-void Animal::setDieta(string d) {
+void Animal::setDieta(string d)
+{
 	dieta = d;
 }
 
-Veterinario* Animal::getVeterinario() {
+Veterinario *Animal::getVeterinario()
+{
 	return veterinario;
 }
 
-void Animal::setVeterinario(Veterinario *v) {
+void Animal::setVeterinario(Veterinario *v)
+{
 	veterinario = v;
 }
 
-Tratador* Animal::getTratador() {
+Tratador *Animal::getTratador()
+{
 	return tratador;
 }
 
-void Animal::setTratador(Tratador *t) {
+void Animal::setTratador(Tratador *t)
+{
 	tratador = t;
 }
 
-string Animal::getBatismo() {
+string Animal::getBatismo()
+{
 	return batismo;
 }
 
-void Animal::setBatismo(string b) {
+void Animal::setBatismo(string b)
+{
 	batismo = b;
 }
 
-
-istream& operator>> (istream &is, Animal &animals) {
+istream &operator>>(istream &is, Animal &animals)
+{
 
 	string saida;
 	getline(is, saida);
 	istringstream iss(saida);
 
-	iss >> animals.id;						
-	iss.ignore();						
-	getline(iss, animals.classe, ';'); 		
-	getline(iss, animals.nome, ';');			
-    getline(iss, animals.cientifico, ';');	
-    iss >> animals.sexo;						
-    iss.ignore();						
-    iss >> animals.tamanho;					
-    iss.ignore();						
-    getline(iss, animals.dieta, ';');
-    
+	iss >> animals.id;
+	iss.ignore();
+	getline(iss, animals.classe, ';');
+	getline(iss, animals.nome, ';');
+	getline(iss, animals.cientifico, ';');
+	iss >> animals.sexo;
+	iss.ignore();
+	iss >> animals.tamanho;
+	iss.ignore();
+	getline(iss, animals.dieta, ';');
+
 	getline(iss, animals.batismo, ';');
 
-    if (animals.classe == "Amphibia") {
-    	Anfibio anfibio_copy;
-    	iss >> anfibio_copy.total_mudas;
-    	iss.ignore();
-    	getline(iss, anfibio_copy.ultima_muda, ';');
-    } 	
-    else if (animals.classe == "Mammalia") {
-    	Mamifero mamifero_copy;
-    	getline(iss, mamifero_copy.cor_pelo,';');
-    }
-    else if (animals.classe == "Reptilia"){
-    	Reptil reptil_copy;
-        iss >> reptil_copy.venenoso;
-    	iss.ignore();
-    	getline(iss, reptil_copy.tipo_veneno,';');
-    }
-    else {
-    	Ave bird;
-    	iss >> bird.tamanho_bico;
-    	iss.ignore();
-    	iss >> bird.envergadura;
-    	iss.ignore();
-    }
+	if (animals.classe == "Amphibia")
+	{
+		Anfibio anfibio_copy;
+		iss >> anfibio_copy.total_mudas;
+		iss.ignore();
+		getline(iss, anfibio_copy.ultima_muda, ';');
+	}
+	else if (animals.classe == "Mammalia")
+	{
+		Mamifero mamifero_copy;
+		getline(iss, mamifero_copy.cor_pelo, ';');
+	}
+	else if (animals.classe == "Reptilia")
+	{
+		Reptil reptil_copy;
+		iss >> reptil_copy.venenoso;
+		iss.ignore();
+		getline(iss, reptil_copy.tipo_veneno, ';');
+	}
+	else
+	{
+		Ave bird;
+		iss >> bird.tamanho_bico;
+		iss.ignore();
+		iss >> bird.envergadura;
+		iss.ignore();
+	}
 
-    return is;
+	return is;
 }
 
 /**
@@ -167,10 +193,11 @@ istream& operator>> (istream &is, Animal &animals) {
  * @param   a  Objeto da classe "Animal"
  */
 
-ostream& operator<< (ostream &os, Animal &animals) {
+ostream &operator<<(ostream &os, Animal &animals)
+{
 
 	os << "Identificador do animal: " << animals.id << endl;
-	os << "Classe do animal: " << animals.classe << endl;	
+	os << "Classe do animal: " << animals.classe << endl;
 	os << "Nome do animal: " << animals.nome << endl;
 	os << "Nome científico do animal: " << animals.cientifico << endl;
 	os << "Sexo do animal: " << animals.sexo << endl;
@@ -178,8 +205,6 @@ ostream& operator<< (ostream &os, Animal &animals) {
 	os << "Dieta predominante: " << animals.dieta << endl;
 	os << "Nome de batismo: " << animals.batismo << endl;
 	os << endl;
-
-   
 
 	return os;
 }
@@ -191,30 +216,33 @@ ostream& operator<< (ostream &os, Animal &animals) {
  * @date  02/11/2016
  */
 
-
-Anfibio::Anfibio() {
+Anfibio::Anfibio()
+{
 	total_mudas = 0;
 	ultima_muda = "";
 }
 
-
-Anfibio::~Anfibio() {
-
+Anfibio::~Anfibio()
+{
 }
 
-int Anfibio::getTotalMudas() {
+int Anfibio::getTotalMudas()
+{
 	return total_mudas;
 }
 
-void Anfibio::setTotalMUdas(int tm) {
+void Anfibio::setTotalMUdas(int tm)
+{
 	total_mudas = tm;
 }
 
-string Anfibio::getUltimaMuda() {
+string Anfibio::getUltimaMuda()
+{
 	return ultima_muda;
 }
 
-void Anfibio::setUltimaMuda(string um) {
+void Anfibio::setUltimaMuda(string um)
+{
 	ultima_muda = um;
 }
 
@@ -225,22 +253,24 @@ void Anfibio::setUltimaMuda(string um) {
  * @date  02/11/2016
  */
 
-Mamifero::Mamifero() {
+Mamifero::Mamifero()
+{
 	cor_pelo = "";
 }
 
-
-Mamifero::~Mamifero() {
-
+Mamifero::~Mamifero()
+{
 }
 
-string Mamifero::getCorPelo() {
+string Mamifero::getCorPelo()
+{
 	return cor_pelo;
 }
 
-void Mamifero::setCorPelo(string cp) {
+void Mamifero::setCorPelo(string cp)
+{
 	cor_pelo = cp;
-}	
+}
 
 /**
  * @brief Implementação dos métodos definidos na classe Reptil.
@@ -249,30 +279,33 @@ void Mamifero::setCorPelo(string cp) {
  * @date  02/11/2016
  */
 
-Reptil::Reptil() {
+Reptil::Reptil()
+{
 	venenoso = false;
 	tipo_veneno = "";
 }
 
-
-Reptil::~Reptil() {
-
+Reptil::~Reptil()
+{
 }
 
-bool Reptil::getVenenoso() {
+bool Reptil::getVenenoso()
+{
 	return venenoso;
 }
 
-
-void Reptil::setVenenoso(bool v) {
+void Reptil::setVenenoso(bool v)
+{
 	venenoso = v;
 }
 
-string Reptil::getTipoVeneno() {
+string Reptil::getTipoVeneno()
+{
 	return tipo_veneno;
 }
 
-void Reptil::setTipoVeneno(string tv) {
+void Reptil::setTipoVeneno(string tv)
+{
 	tipo_veneno = tv;
 }
 
@@ -283,29 +316,32 @@ void Reptil::setTipoVeneno(string tv) {
  * @date  02/11/2016
  */
 
-Ave::Ave() {
+Ave::Ave()
+{
 	tamanho_bico = 0;
 	envergadura = 0;
 }
 
-
-Ave::~Ave() {
-
+Ave::~Ave()
+{
 }
 
-int Ave::getTamanhoBico() {
+int Ave::getTamanhoBico()
+{
 	return tamanho_bico;
 }
 
-void Ave::setTamanhoBico(int tb) {
+void Ave::setTamanhoBico(int tb)
+{
 	tamanho_bico = tb;
 }
 
-int Ave::getEnvergadura() {
+int Ave::getEnvergadura()
+{
 	return envergadura;
 }
 
-void Ave::setEnvergadura(int e) {
+void Ave::setEnvergadura(int e)
+{
 	envergadura = e;
 }
-

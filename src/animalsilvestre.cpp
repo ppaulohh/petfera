@@ -1,80 +1,81 @@
 #include "animalsilvestre.h"
 
-
-AnimalSilvestre::AnimalSilvestre() {
+AnimalSilvestre::AnimalSilvestre()
+{
 	ibama = "";
 }
 
-
-AnimalSilvestre::AnimalSilvestre(string i) :
-	ibama(i) {
+AnimalSilvestre::AnimalSilvestre(string i) : ibama(i)
+{
 }
 
-
-AnimalSilvestre::~AnimalSilvestre() {
-
+AnimalSilvestre::~AnimalSilvestre()
+{
 }
 
-string AnimalSilvestre::getIbama() {
+string AnimalSilvestre::getIbama()
+{
 	return ibama;
 }
 
-void AnimalSilvestre::setIbama(string i) {
+void AnimalSilvestre::setIbama(string i)
+{
 	ibama = i;
 }
 
-
-Nativo::Nativo() {
+Nativo::Nativo()
+{
 	uf_origem = "";
 	autorizacao = "";
 }
 
-	
-Nativo::Nativo(string uf, string a) :
-	uf_origem(uf), autorizacao(a) {
-
+Nativo::Nativo(string uf, string a) : uf_origem(uf), autorizacao(a)
+{
 }
 
-
-Nativo::~Nativo() {
-
+Nativo::~Nativo()
+{
 }
 
-string Nativo::getUforigem() {
+string Nativo::getUforigem()
+{
 	return uf_origem;
 }
 
-void Nativo::setUforigem(string uf) {
+void Nativo::setUforigem(string uf)
+{
 	uf_origem = uf;
 }
 
-string Nativo::getAutorizacao() {
+string Nativo::getAutorizacao()
+{
 	return autorizacao;
 }
 
-void Nativo::setAutorizacao(string a) {
+void Nativo::setAutorizacao(string a)
+{
 	autorizacao = a;
 }
 
-
-Exotico::Exotico() {
+Exotico::Exotico()
+{
 	pais_origem = "";
 }
 
-
-Exotico::Exotico(string po) :
-	pais_origem(po) {
+Exotico::Exotico(string po) : pais_origem(po)
+{
 }
 
-
-Exotico::~Exotico() {
-
+Exotico::~Exotico()
+{
 }
 
-string Exotico::getPaisOrigem() {
+string Exotico::getPaisOrigem()
+{
 	return pais_origem;
 }
 
-void Exotico::setPaisOrigem(string po) {
+void Exotico::setPaisOrigem(string po)
+{
 	pais_origem = po;
 }

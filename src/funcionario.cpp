@@ -1,7 +1,7 @@
 #include "funcionario.h"
 
-
-Funcionario::Funcionario() {
+Funcionario::Funcionario()
+{
 	id = 0;
 	tipofunc = "";
 	nome = "";
@@ -12,119 +12,131 @@ Funcionario::Funcionario() {
 	especialidade = "";
 }
 
+Funcionario::Funcionario(int a, string b, string c, short d, char f, string g, string h, string i)
+{
 
-
-Funcionario::Funcionario(int a, string b, string c, short d, char f, string g, string h, string i) {
-
-  setId(a);
-  setNome(b);
-  setCpf(c);
-  setIdade(d);
-  setTipo_Sanguineo(f);
-  setFatorRH(g);
-  setEspecialidade(h);
-  setTipoFunc(i);
-
+	setId(a);
+	setNome(b);
+	setCpf(c);
+	setIdade(d);
+	setTipo_Sanguineo(f);
+	setFatorRH(g);
+	setEspecialidade(h);
+	setTipoFunc(i);
 }
 
-
-Funcionario::~Funcionario() {
-
+Funcionario::~Funcionario()
+{
 }
 
-int Funcionario::getId() {
+int Funcionario::getId()
+{
 	return id;
 }
 
-void Funcionario::setId(int i) {
+void Funcionario::setId(int i)
+{
 	id = i;
 }
 
-string Funcionario::getTipoFunc() {
+string Funcionario::getTipoFunc()
+{
 	return tipofunc;
 }
 
-void Funcionario::setTipoFunc(string t) {
+void Funcionario::setTipoFunc(string t)
+{
 	tipofunc = t;
 }
 
-string Funcionario::getNome() {
+string Funcionario::getNome()
+{
 	return nome;
 }
 
-void Funcionario::setNome(string n) {
+void Funcionario::setNome(string n)
+{
 	nome = n;
 }
 
-string Funcionario::getCpf() {
+string Funcionario::getCpf()
+{
 	return cpf;
 }
 
-void Funcionario::setCpf(string c) {
+void Funcionario::setCpf(string c)
+{
 	cpf = c;
 }
 
-short Funcionario::getIdade() {
+short Funcionario::getIdade()
+{
 	return idade;
 }
 
-void Funcionario::setIdade(short i) {
+void Funcionario::setIdade(short i)
+{
 	idade = i;
 }
 
-char Funcionario::getTipo_Sanguineo() {
+char Funcionario::getTipo_Sanguineo()
+{
 	return tipo_sanguineo;
 }
 
-void Funcionario::setTipo_Sanguineo(char ts) {
+void Funcionario::setTipo_Sanguineo(char ts)
+{
 	tipo_sanguineo = ts;
 }
 
-string Funcionario::getFatorRH() {
+string Funcionario::getFatorRH()
+{
 	return fatorRH;
 }
 
-void Funcionario::setFatorRH(string rh) {
+void Funcionario::setFatorRH(string rh)
+{
 	fatorRH = rh;
 }
 
-string Funcionario::getEspecialidade() {
+string Funcionario::getEspecialidade()
+{
 	return especialidade;
 }
 
-void Funcionario::setEspecialidade(string e) {
+void Funcionario::setEspecialidade(string e)
+{
 	especialidade = e;
 }
 
+istream &operator>>(istream &is, Funcionario &officials)
+{
 
-istream& operator>> (istream &is, Funcionario &officials) {
-
-	string linha,escolha_funcionario;
+	string linha, escolha_funcionario;
 	int i;
 	getline(is, linha);
 	istringstream iss(linha);
 
-	iss >> i;	
+	iss >> i;
 	iss.ignore();
 	getline(iss, escolha_funcionario, ';');
 
 	officials.id = i;
 	officials.tipofunc = escolha_funcionario;
-	getline(iss, officials.nome, ';');			
-    getline(iss, officials.cpf, ';');	
-    iss >> officials.idade;						
-    iss.ignore();						
-    iss >> officials.tipo_sanguineo;					
-    iss.ignore();
-	getline (iss,officials.fatorRH, ';');						
-    getline(iss, officials.especialidade, ';');    
+	getline(iss, officials.nome, ';');
+	getline(iss, officials.cpf, ';');
+	iss >> officials.idade;
+	iss.ignore();
+	iss >> officials.tipo_sanguineo;
+	iss.ignore();
+	getline(iss, officials.fatorRH, ';');
+	getline(iss, officials.especialidade, ';');
 
-
-    return is;
+	return is;
 }
 
-
-ostream& operator<< (ostream &os, Funcionario &officials) {
+ostream &operator<<(ostream &os, Funcionario &officials)
+{
 
 	os << "Identificador do funcionário: " << officials.id << endl;
 	os << "Função: " << officials.tipofunc << endl;
@@ -139,22 +151,18 @@ ostream& operator<< (ostream &os, Funcionario &officials) {
 	return os;
 }
 
-
-Veterinario::Veterinario() {
-
+Veterinario::Veterinario()
+{
 }
 
-
-Veterinario::~Veterinario() {
-
+Veterinario::~Veterinario()
+{
 }
 
-
-Tratador::Tratador() {
-
+Tratador::Tratador()
+{
 }
 
-
-Tratador::~Tratador() {
-
+Tratador::~Tratador()
+{
 }

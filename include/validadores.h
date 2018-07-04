@@ -7,24 +7,28 @@
 
 using namespace std;
 
-class ErroNaSaida : public std::exception {
-	public:
-		const char* what() {
-			return "Está entrada é inválida para essa opção";
-		}
+class ErroNaSaida : public std::exception
+{
+public:
+	const char *what()
+	{
+		return "Está entrada é inválida para essa opção";
+	}
 };
 
-
-class IDinvalido : public std::invalid_argument {
-	public:
-		IDinvalido() : std::invalid_argument("Id não foi encontrado") {}
+class IDinvalido : public std::invalid_argument
+{
+public:
+	IDinvalido() : std::invalid_argument("Id não foi encontrado") {}
 };
 
-class EntradaInvalida : public std::exception {
-	public:
-		const char* what() {
-			return "Está entrada é inválida";
-		}
+class EntradaInvalida : public std::exception
+{
+public:
+	const char *what()
+	{
+		return "Está entrada é inválida";
+	}
 };
 
 #endif
