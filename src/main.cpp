@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
 				cout << "Digite aqui sua opção: ";
 				cin >> opcao;
 				ChecarEntrada(opcao);
-				escolha = atoi(opcao.c_str());
+				escolha = stoi(opcao);
 				cout << endl;
 
 				//Funcionários
