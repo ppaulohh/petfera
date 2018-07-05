@@ -52,15 +52,15 @@ CPPFLAGS = -Wall -pedantic -std=c++11 -ansi -I$(INC)
 # Lista dos arquivos objeto (.o) que formam o binario/executavel final
 OBJS = $(OBJ)/animalsilvestre.o $(OBJ)/animal.o $(OBJ)/funcionario.o $(OBJ)/funcoes.o $(OBJ)/main.o
 
-#all: $(OBJS) $(BIN)/petfera
-all: diretorios $(OBJS)
+all: $(OBJS) $(BIN)/petfera
+#all: diretorios $(OBJS)
 	$(CC) $(CPPFLAGS) -o $(PROG) $(OBJS)
 
 diretorios:
 	$(MKDIR_P) $(DIR_CRT)
 
 # Bibliotecas .a e .so para o Linux
-#linux: petfera.a petfera.so static-petfera dynamic-petfera
+linux: petfera.a petfera.so static-petfera dynamic-petfera
 
 # Bibliotecas .lib e .dll para gerar bibliotecas para o Windows
 #windows:
@@ -105,6 +105,6 @@ debug: all
 # Alvo (target) usado para limpar os arquivos temporarios (objeto)
 # gerados durante a compilacao, assim como os arquivos binarios/executaveis.
 clean:
-	@echo "Removendo arquivos objetos e executáveis contidos nas pastas ./build e ./bin, respectivamente... "
+	@echo "Removendo arquivos objetos e executáveis contidos nas pastas ./build e ./bin, respectivamente."
 	$(RM) $(OBJ)/* $(BIN)/*
 	#rm -f $(PROG) $(OBJS)
