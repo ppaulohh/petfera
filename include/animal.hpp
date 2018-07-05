@@ -1,10 +1,11 @@
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
-#include "funcionario.hpp"
-#include "animalsilvestre.hpp"
 #include <iostream>
 #include <sstream>
+
+#include "funcionario.hpp"
+#include "animalsilvestre.hpp"
 
 using namespace std;
 
