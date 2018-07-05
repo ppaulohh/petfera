@@ -47,13 +47,13 @@ PROG = $(BIN)/petfera
 .PHONY: all clean debug doxy doc
 
 # Opções de compilação
-CPPFLAGS = -Wall -pedantic -std=c++11 -ansi -I$(INC)
+CPPFLAGS = -Wall -pedantic -std=c++11 -I$(INC)
 
 # Lista dos arquivos objeto (.o) que formam o binario/executavel final
 OBJS = $(OBJ)/animalsilvestre.o $(OBJ)/animal.o $(OBJ)/funcionario.o $(OBJ)/funcoes.o $(OBJ)/main.o
 
-#all: $(OBJS) $(BIN)/petfera
-all: diretorios $(OBJS)
+all: $(OBJS) $(BIN)/petfera
+#all: diretorios $(OBJS)
 	$(CC) $(CPPFLAGS) -o $(PROG) $(OBJS)
 
 diretorios:

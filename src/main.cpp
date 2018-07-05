@@ -52,8 +52,7 @@ int main(int argc, char const *argv[])
 
 				cout << "Digite aqui sua opção: " << endl;
 				cin >> opcao;
-				ChecarEntrada(opcao);
-				escolha = stoi(opcao);
+				escolha = std::stoi(opcao);
 
 				//Funcionários
 				switch (escolha)
