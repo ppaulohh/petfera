@@ -43,17 +43,18 @@ int main(int argc, char const *argv[])
 				int escolha;
 				int op4;
 
-				cout << "Digite 1 para Cadastro" << endl;
-				cout << "Digite 2 para Consulta de Funcionarios" << endl;
-				cout << "Digite 3 para Consulta de Animais" << endl;
-				cout << "Digite 4 para Remoção de Animais" << endl;
-				cout << "Digite 5 para Remoção de Funcionários" << endl;
-				cout << "Digite 6 para finalizar o programa" << endl;
+				cout << "Digite [1] para Cadastro" << endl;
+				cout << "Digite [2] para Consulta de Funcionarios" << endl;
+				cout << "Digite [3] para Consulta de Animais" << endl;
+				cout << "Digite [4] para Remoção de Animais" << endl;
+				cout << "Digite [5] para Remoção de Funcionários" << endl;
+				cout << "Digite [6] para finalizar o programa" << endl;
 
-				cout << "Digite aqui sua opção: " << endl;
+				cout << "Digite aqui sua opção: ";
 				cin >> opcao;
 				ChecarEntrada(opcao);
-				escolha = stoi(opcao);
+				escolha = atoi(opcao.c_str());
+				cout << endl;
 
 				//Funcionários
 				switch (escolha)
@@ -105,12 +106,14 @@ int main(int argc, char const *argv[])
 					cout << "Defina qual o id do animal que será removido: ";
 					cin >> op4;
 					RemoveAnimal(animals, op4);
+					cout << endl;
 					break;
 
 				case 5:
 					cout << "Defina qual o id do animal que será removido: ";
 					cin >> op4;
 					RemoveFuncionario(funcinarios, op4);
+					cout << endl;
 					break;
 
 				case 6:
