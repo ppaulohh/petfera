@@ -18,7 +18,6 @@ Animal::Animal()
 /** contrutor parametizado */
 Animal::Animal(int a, string b, string c, string d, char e, float f, string g, Veterinario *v, Tratador *t, string h)
 {
-
 	setId(a);
 	setNome(b);
 	setCientifico(c);
@@ -138,7 +137,6 @@ void Animal::setBatismo(string b)
 
 istream &operator>>(istream &is, Animal &animals)
 {
-
 	string saida;
 	getline(is, saida);
 	istringstream iss(saida);
@@ -195,7 +193,6 @@ istream &operator>>(istream &is, Animal &animals)
 
 ostream &operator<<(ostream &os, Animal &animals)
 {
-
 	os << "Identificador do animal: " << animals.id << endl;
 	os << "Classe do animal: " << animals.classe << endl;
 	os << "Nome do animal: " << animals.nome << endl;
