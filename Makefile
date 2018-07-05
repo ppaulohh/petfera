@@ -76,7 +76,7 @@ $(OBJ)/funcoes.o: $(INC)/funcoes.hpp
 	$(CC) $(CPPFLAGS) -c $(SRC)/funcoes.cpp -o $@
 
 $(OBJ)/main.o: $(SRC)/main.cpp
-	$(CC) $(CPPFLAGS) -c $(SRC)/main.cpp -o $@	
+	$(CC) $(CPPFLAGS) -c $(SRC)/main.cpp -o $@
 
 $(BIN)/petfera: $(OBJ)/main.o
 	$(CC) $(CPPFLAGS) $(OBJS) -o $@
