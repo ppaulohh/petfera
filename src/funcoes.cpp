@@ -70,7 +70,7 @@ void CadastroFuncionario(map<int, Funcionario *> &funcinarios, string tipo, ifst
 		}
 		else
 		{
-			cerr << "Função Inexistente" << endl;
+			cerr << "Função Inexistente.";
 		}
 	}
 	catch (ErroNaSaida &ex)
@@ -90,7 +90,7 @@ void RemoveAnimal(map<int, Animal *> &animals, int id)
 		if (busca != animals.end())
 		{
 			animals.erase(id);
-			cout << "Animal foi removido com sucesso" << endl;
+			cout << "Animal foi removido com sucesso!" << endl;
 		}
 		else
 		{
@@ -113,7 +113,7 @@ void RemoveFuncionario(map<int, Funcionario *> &funcinarios, int id)
 		if (busca != funcinarios.end())
 		{
 			funcinarios.erase(id);
-			cout << "Funcionário foi removido com sucesso" << endl;
+			cout << "Funcionário foi removido com sucesso!" << endl;
 		}
 		else
 		{
@@ -131,6 +131,7 @@ void ConsultaAnimal(map<int, Animal *> &animals)
 	int id;
 	cout << "Defina qual o id do animal que está buscando: ";
 	cin >> id;
+	cout << endl;
 
 	try
 	{
@@ -160,6 +161,7 @@ void ConsultaFuncionario(map<int, Funcionario *> &funcinarios)
 
 	cout << "Defina qual o id do funcionário que se busca: ";
 	cin >> id;
+	cout << endl;
 
 	map<int, Funcionario *>::iterator busca = funcinarios.find(id);
 

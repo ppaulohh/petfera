@@ -12,14 +12,15 @@ class ErroNaSaida : public std::exception
 public:
 	const char *what()
 	{
-		return "Está entrada é inválida para essa opção";
+		return "Está entrada é inválida para essa opção!";
+		cout << endl;
 	}
 };
 
 class IDinvalido : public std::invalid_argument
 {
 public:
-	IDinvalido() : std::invalid_argument("Id não foi encontrado") {}
+	IDinvalido() : std::invalid_argument("Id não foi encontrado!") {}
 };
 
 class EntradaInvalida : public std::exception
@@ -27,7 +28,8 @@ class EntradaInvalida : public std::exception
 public:
 	const char *what()
 	{
-		return "Está entrada é inválida";
+		return "Está entrada é inválida!";
+		cout << endl;
 	}
 };
 
