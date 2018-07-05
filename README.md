@@ -114,7 +114,7 @@ Parametros para executar:
 1. caminho absoluto para o arquivo de expressões
 
 #### EXEMPLO
->./petfera /caminhodoarquivo.txt
+>./bin/petfera
 
 ### Autores
 [Paulo Henrique](https://github.com/ppaulohh "Paulo Henrique")<br>

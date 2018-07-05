@@ -2,12 +2,10 @@
 
 void CadastroAnimal(map<int, Animal *> &animals, string classe, ifstream &is, int posicao, int chave)
 {
-
 	Animal *animals_copia;
 
 	try
 	{
-
 		if (classe == "Mammalia")
 		{
 			animals_copia = new Mamifero;
@@ -49,7 +47,6 @@ void CadastroAnimal(map<int, Animal *> &animals, string classe, ifstream &is, in
 
 void CadastroFuncionario(map<int, Funcionario *> &funcinarios, string tipo, ifstream &is, int posicao, int chave)
 {
-
 	Funcionario *officials;
 
 	try
@@ -70,19 +67,17 @@ void CadastroFuncionario(map<int, Funcionario *> &funcinarios, string tipo, ifst
 		}
 		else
 		{
-			cerr << "Função Inexistente" << endl;
+			cerr << "Função Inexistente." << endl;
 		}
 	}
 	catch (ErroNaSaida &ex)
 	{
-
 		cerr << ex.what() << endl;
 	}
 }
 
 void RemoveAnimal(map<int, Animal *> &animals, int id)
 {
-
 	map<int, Animal *>::iterator busca = animals.find(id);
 
 	try
@@ -90,7 +85,7 @@ void RemoveAnimal(map<int, Animal *> &animals, int id)
 		if (busca != animals.end())
 		{
 			animals.erase(id);
-			cout << "Animal foi removido com sucesso" << endl;
+			cout << "Animal foi removido com sucesso!" << endl;
 		}
 		else
 		{
@@ -105,7 +100,6 @@ void RemoveAnimal(map<int, Animal *> &animals, int id)
 
 void RemoveFuncionario(map<int, Funcionario *> &funcinarios, int id)
 {
-
 	map<int, Funcionario *>::iterator busca = funcinarios.find(id);
 
 	try
@@ -113,7 +107,7 @@ void RemoveFuncionario(map<int, Funcionario *> &funcinarios, int id)
 		if (busca != funcinarios.end())
 		{
 			funcinarios.erase(id);
-			cout << "Funcionário foi removido com sucesso" << endl;
+			cout << "Funcionário foi removido com sucesso!" << endl;
 		}
 		else
 		{
@@ -131,35 +125,33 @@ void ConsultaAnimal(map<int, Animal *> &animals)
 	int id;
 	cout << "Defina qual o id do animal que está buscando: ";
 	cin >> id;
+	cout << endl;
 
 	try
 	{
 		map<int, Animal *>::iterator busca = animals.find(id);
 		if (busca != animals.end())
 		{
-
 			cout << (*animals[id]);
 		}
 		else
 		{
-
 			throw IDinvalido();
 		}
 	}
 	catch (IDinvalido &ex)
 	{
-
 		cerr << ex.what() << endl;
 	}
 }
 
 void ConsultaFuncionario(map<int, Funcionario *> &funcinarios)
 {
-
 	int id;
 
 	cout << "Defina qual o id do funcionário que se busca: ";
 	cin >> id;
+	cout << endl;
 
 	map<int, Funcionario *>::iterator busca = funcinarios.find(id);
 
@@ -182,7 +174,6 @@ void ConsultaFuncionario(map<int, Funcionario *> &funcinarios)
 
 void ChecarEntrada(string opcao)
 {
-
 	if (!std::isdigit(opcao[0]))
 	{
 		throw EntradaInvalida();
