@@ -1,3 +1,11 @@
+/**
+ * @file main.cpp
+ * @brief	implementação da classe Main em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #include <iostream>
 #include <cstdlib>
 #include <fstream>

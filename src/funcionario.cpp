@@ -1,3 +1,11 @@
+/**
+ * @file funcionario.cpp
+ * @brief	implementação da classe Funcionário em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #include "funcionario.hpp"
 
 Funcionario::Funcionario()

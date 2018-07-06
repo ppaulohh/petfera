@@ -1,3 +1,11 @@
+/**
+ * @file funcoes.cpp
+ * @brief	implementação da classe Funções em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #include "funcoes.hpp"
 
 void CadastroAnimal(map<int, Animal *> &animals, string classe, ifstream &is, int posicao, int chave)

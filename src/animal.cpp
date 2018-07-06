@@ -1,3 +1,11 @@
+/**
+ * @file animal.cpp
+ * @brief	implementação da classe Animal em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #include "animal.hpp"
 
 /** contrutor padrão */

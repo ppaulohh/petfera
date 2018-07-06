@@ -1,3 +1,11 @@
+/**
+ * @file animalsilvestre.cpp
+ * @brief	implementação da classe Animal Silvestre em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #include "animalsilvestre.hpp"
 
 AnimalSilvestre::AnimalSilvestre()
