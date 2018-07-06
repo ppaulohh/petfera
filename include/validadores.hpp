@@ -1,3 +1,11 @@
+/**
+ * @file validadores.hpp
+ * @brief	Cabeçalho da classe Validadores em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #ifndef EXCEPTIONS_HPP
 #define EXCEPTIONS_HPP
 

@@ -1,3 +1,11 @@
+/**
+ * @file funcoes.hpp
+ * @brief	Cabeçalho da classe Funções em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #ifndef FUNCOES_HPP
 #define FUNCOES_HPP
 

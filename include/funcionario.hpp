@@ -1,3 +1,11 @@
+/**
+ * @file funcionario.hpp
+ * @brief	Cabeçalho da classe Funcionário em C++
+ * @author Paulo Henrique e Thiago Silva
+ * @since	27/06/2018
+ * @date	06/07/2018
+ */
+
 #ifndef FUNCIONARIO_HPP
 #define FUNCIONARIO_HPP
 
