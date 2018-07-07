@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
 				switch (escolha)
 				{
 				case 1:
-					for (int j = 0; j < 4; j++)
+					for (int j = 0; j < 3; j++)
 					{
 						string linha, escolha_funcionario;
 						int id;
@@ -75,7 +75,7 @@ int main(int argc, char const *argv[])
 					}
 
 					//Animais
-					for (int i = 0; i < 4; i++)
+					for (int i = 0; i < 3; i++)
 					{
 						string classe, linha2;
 						int id;
