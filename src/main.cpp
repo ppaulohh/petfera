@@ -51,12 +51,12 @@ int main(int argc, char const *argv[])
 				int escolha;
 				int op4;
 
-				cout << "Digite [1] para Cadastro" << endl;
-				cout << "Digite [2] para Consulta de Funcionarios" << endl;
-				cout << "Digite [3] para Consulta de Animais" << endl;
-				cout << "Digite [4] para Remoção de Animais" << endl;
-				cout << "Digite [5] para Remoção de Funcionários" << endl;
-				cout << "Digite [6] para finalizar o programa" << endl;
+				cout << "[1] Importar dados" << endl;
+				cout << "[2] Consulta de Funcionarios" << endl;
+				cout << "[3] Consulta de Animais" << endl;
+				cout << "[4] Remoção de Animais" << endl;
+				cout << "[5] Remoção de Funcionários" << endl;
+				cout << "[6] finalizar o programa" << endl;
 
 				cout << "Digite aqui sua opção: ";
 				cin >> opcao;

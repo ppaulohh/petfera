@@ -75,7 +75,7 @@ void CadastroFuncionario(map<int, Funcionario *> &funcinarios, string tipo, ifst
 		}
 		else
 		{
-			cerr << "Função Inexistente." << endl;
+			cerr << " " << endl;
 		}
 	}
 	catch (ErroNaSaida &ex)
