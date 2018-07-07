@@ -104,5 +104,5 @@ debug: all
 # Alvo (target) usado para limpar os arquivos temporarios (objeto)
 # gerados durante a compilacao, assim como os arquivos binarios/executaveis.
 clean:
-	@echo "Removendo arquivos objetos e executáveis contidos nas pastas ./build e ./bin, respectivamente."
 	$(RM) $(OBJ)/* $(BIN)/*
+	@echo "Removido arquivos objetos e executáveis contidos nas pastas ./build e ./bin, respectivamente."
