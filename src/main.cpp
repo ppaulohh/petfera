@@ -68,13 +68,13 @@ int main(int argc, char const *argv[])
 				cin >> opcao;
 				ChecarEntrada(opcao);
 				escolha = stoi(opcao);
-				cout << endl;
+				// cout << endl;
 
 				//Funcionários
 				switch (escolha)
 				{
 				case 1:
-					for (int j = 0; j < 4; j++)
+					for (int j = 0; j < 3; j++)
 					{
 						string linha, escolha_funcionario;
 						int id;
@@ -89,7 +89,7 @@ int main(int argc, char const *argv[])
 					}
 
 					//Animais
-					for (int i = 0; i < 4; i++)
+					for (int i = 0; i < 3; i++)
 					{
 						string classe, linha2;
 						int id;
@@ -105,7 +105,7 @@ int main(int argc, char const *argv[])
 					tipo_de_classe.close();
 					petfera.close();
 					funcionarios.close();
-					cout << "Os dados foram Cadastrados" << endl;
+					cout << "Os dados foram importados." << endl;
 					break;
 
 				case 2:

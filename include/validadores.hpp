@@ -25,8 +25,8 @@ class ErroNaSaida : public std::exception
 public:
 	const char *what()
 	{
-		return "Está entrada é inválida para essa opção!";
-		cout << endl;
+		return " ";
+		// cout << endl;
 	}
 };
 
@@ -52,7 +52,7 @@ public:
 	const char *what()
 	{
 		return "Está entrada é inválida!";
-		cout << endl;
+		// cout << endl;
 	}
 };
 
