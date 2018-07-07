@@ -8,6 +8,12 @@
 
 #include "funcoes.hpp"
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void CadastroAnimal(map<int, Animal *> &animals, string classe, ifstream &is, int posicao, int chave)
 {
 	Animal *animals_copia;
@@ -53,6 +59,12 @@ void CadastroAnimal(map<int, Animal *> &animals, string classe, ifstream &is, in
 	}
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void CadastroFuncionario(map<int, Funcionario *> &funcinarios, string tipo, ifstream &is, int posicao, int chave)
 {
 	Funcionario *officials;
@@ -84,6 +96,12 @@ void CadastroFuncionario(map<int, Funcionario *> &funcinarios, string tipo, ifst
 	}
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void RemoveAnimal(map<int, Animal *> &animals, int id)
 {
 	map<int, Animal *>::iterator busca = animals.find(id);
@@ -106,6 +124,12 @@ void RemoveAnimal(map<int, Animal *> &animals, int id)
 	}
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void RemoveFuncionario(map<int, Funcionario *> &funcinarios, int id)
 {
 	map<int, Funcionario *>::iterator busca = funcinarios.find(id);
@@ -128,6 +152,12 @@ void RemoveFuncionario(map<int, Funcionario *> &funcinarios, int id)
 	}
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void ConsultaAnimal(map<int, Animal *> &animals)
 {
 	int id;
@@ -153,6 +183,12 @@ void ConsultaAnimal(map<int, Animal *> &animals)
 	}
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void ConsultaFuncionario(map<int, Funcionario *> &funcinarios)
 {
 	int id;
@@ -180,6 +216,12 @@ void ConsultaFuncionario(map<int, Funcionario *> &funcinarios)
 	}
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void ChecarEntrada(string opcao)
 {
 	if (!std::isdigit(opcao[0]))

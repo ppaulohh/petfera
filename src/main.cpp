@@ -16,6 +16,12 @@
 
 using namespace std;
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 int main(int argc, char const *argv[])
 {
 	map<int, Animal *> animals;

@@ -15,6 +15,11 @@
 
 using namespace std;
 
+/** 
+ * @brief
+ * @return
+ * @return
+ */
 class ErroNaSaida : public std::exception
 {
 public:
@@ -25,12 +30,22 @@ public:
 	}
 };
 
+/** 
+ * @brief
+ * @return
+ * @return
+ */
 class IDinvalido : public std::invalid_argument
 {
 public:
 	IDinvalido() : std::invalid_argument("Id não foi encontrado!") {}
 };
 
+/** 
+ * @brief
+ * @return
+ * @return
+ */
 class EntradaInvalida : public std::exception
 {
 public:

@@ -20,11 +20,39 @@ protected:
 	string ibama;
 
 public:
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	AnimalSilvestre();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	AnimalSilvestre(string i);
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	virtual ~AnimalSilvestre() = 0;
 
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	string getIbama();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	void setIbama(string i);
 };
 
@@ -35,13 +63,53 @@ protected:
 	string autorizacao;
 
 public:
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	Nativo();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	Nativo(string uf, string a);
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	~Nativo();
 
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	string getUforigem();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	void setUforigem(string uf);
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	string getAutorizacao();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	void setAutorizacao(string a);
 };
 
@@ -51,11 +119,39 @@ protected:
 	string pais_origem;
 
 public:
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	Exotico();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	Exotico(string po);
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	~Exotico();
 
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	string getPaisOrigem();
+
+	/** 
+	 * @brief
+	 * @return
+	 * @return
+	 */
 	void setPaisOrigem(string po);
 };
 

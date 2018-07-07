@@ -8,6 +8,12 @@
 
 #include "funcionario.hpp"
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Funcionario::Funcionario()
 {
 	id = 0;
@@ -20,9 +26,14 @@ Funcionario::Funcionario()
 	especialidade = "";
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Funcionario::Funcionario(int a, string b, string c, short d, char f, string g, string h, string i)
 {
-
 	setId(a);
 	setNome(b);
 	setCpf(c);
@@ -33,93 +44,200 @@ Funcionario::Funcionario(int a, string b, string c, short d, char f, string g, s
 	setTipoFunc(i);
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Funcionario::~Funcionario()
 {
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 int Funcionario::getId()
 {
 	return id;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setId(int i)
 {
 	id = i;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 string Funcionario::getTipoFunc()
 {
 	return tipofunc;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setTipoFunc(string t)
 {
 	tipofunc = t;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 string Funcionario::getNome()
 {
 	return nome;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setNome(string n)
 {
 	nome = n;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 string Funcionario::getCpf()
 {
 	return cpf;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setCpf(string c)
 {
 	cpf = c;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 short Funcionario::getIdade()
 {
 	return idade;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setIdade(short i)
 {
 	idade = i;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 char Funcionario::getTipo_Sanguineo()
 {
 	return tipo_sanguineo;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setTipo_Sanguineo(char ts)
 {
 	tipo_sanguineo = ts;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 string Funcionario::getFatorRH()
 {
 	return fatorRH;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setFatorRH(string rh)
 {
 	fatorRH = rh;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 string Funcionario::getEspecialidade()
 {
 	return especialidade;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 void Funcionario::setEspecialidade(string e)
 {
 	especialidade = e;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 istream &operator>>(istream &is, Funcionario &officials)
 {
-
 	string linha, escolha_funcionario;
 	int i;
 	getline(is, linha);
@@ -143,6 +261,12 @@ istream &operator>>(istream &is, Funcionario &officials)
 	return is;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 ostream &operator<<(ostream &os, Funcionario &officials)
 {
 
@@ -159,18 +283,42 @@ ostream &operator<<(ostream &os, Funcionario &officials)
 	return os;
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Veterinario::Veterinario()
 {
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Veterinario::~Veterinario()
 {
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Tratador::Tratador()
 {
 }
 
+/** 
+ * @brief
+ * @detail
+ * @param
+ * @return
+ */
 Tratador::~Tratador()
 {
 }
